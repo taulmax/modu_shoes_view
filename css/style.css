@@ -88,8 +88,26 @@
     padding: 150px 300px;
 }
 
-.best .title {
+.best .title_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best .title_wrapper .title {
     font-size: 45px;
+    font-weight: bold;
+}
+
+.best .title_wrapper .more_product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 12px;
+    background: #212224;
+    color: #fff;
+    cursor: pointer;
     font-weight: bold;
 }
 
