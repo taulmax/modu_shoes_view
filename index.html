@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>모두의 슈즈</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a class="logo">모두의 슈즈</a>
+        <div class="auth_wrapper">
+            <a>로그인</a>
+            <a>로그아웃</a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <span class="big">나에게 필요한 신발 응모하기</span>
+        <span class="small">실시간 발매 정보를 한곳에서!</span>
+    </div>
+
+    <!-- BEST PRODUCT -->
+    <section class="best">
+        <div class="title">BEST PRODUCT</div>
+        <div class="best_product_wrapper">
+            <a href="https://www.google.com" class="product">
+                <div class="product_thumbnail_wrapper">
+                    <img src='https://ifh.cc/g/pQex1r.jpg'>
+                </div>
+                <div class="product_description_wrapper">
+                    <span class="location" title="[구미중앙 나이키 & 평택중앙 나이키]">[구미중앙 나이키 & 평택중앙 나이키]</span>
+                    <span class="product_title" title="나이키 덩크 로우 범고래">나이키 덩크 로우 범고래</span>
+                </div>
+            </a>
+            <a href="https://www.google.com" class="product">
+                <div class="product_thumbnail_wrapper">
+                    <img src='https://ifh.cc/g/7ExEsP.jpg'>
+                </div>
+                <div class="product_description_wrapper">
+                    <span class="location" title="[구미중앙 나이키 & 평택중앙 나이키]">[구미중앙 나이키 & 평택중앙 나이키]</span>
+                    <span class="product_title" title="나이키 덩크 로우 범고래">나이키 덩크 로우 범고래</span>
+                </div>
+            </a>
+            <a href="https://www.google.com" class="product">
+                <div class="product_thumbnail_wrapper">
+                    <img src='https://ifh.cc/g/WvCI5N.jpg'>
+                </div>
+                <div class="product_description_wrapper">
+                    <span class="location" title="[구미중앙 나이키 & 평택중앙 나이키]">[구미중앙 나이키 & 평택중앙 나이키]</span>
+                    <span class="product_title" title="나이키 덩크 로우 범고래">나이키 덩크 로우 범고래</span>
+                </div>
+            </a>
+            <a href="https://www.google.com" class="product">
+                <div class="product_thumbnail_wrapper">
+                    <img src='https://ifh.cc/g/nqeitu.jpg'>
+                </div>
+                <div class="product_description_wrapper">
+                    <span class="location" title="[구미중앙 나이키 & 평택중앙 나이키]">[구미중앙 나이키 & 평택중앙 나이키]</span>
+                    <span class="product_title" title="나이키 덩크 로우 범고래">나이키 덩크 로우 범고래</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        Break a leg!
+    </footer>
+</body>
+
+<script>
+    const best = document.querySelector(".best");
+    const header = document.querySelector(".header");
+
+    document.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 100 && document.documentElement.scrollTop <= 450) {
+            header.classList.add("scroll_down_in_header");
+            header.classList.remove("scroll_down");
+        } else if (document.documentElement.scrollTop > 550) {
+            header.classList.add("scroll_down");
+            header.classList.remove("scroll_down_in_header");
+        } else {
+            header.classList.remove("scroll_down");
+            header.classList.remove("scroll_down_in_header");
+        }
+    });
+</script>
+
+</html>
