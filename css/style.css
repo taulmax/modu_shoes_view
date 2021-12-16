@@ -215,6 +215,10 @@
     cursor: pointer;
 }
 
+.auth button.register_button {
+    margin-top: 30px;
+}
+
 /* Login */
 .find_user {
     margin: 80px 0 20px 0;
