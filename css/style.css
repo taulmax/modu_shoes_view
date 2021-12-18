@@ -91,6 +91,8 @@
 .best .title_wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: 1300px;
+    min-width: 690px;
 }
 
 .best .title_wrapper .title {
@@ -111,17 +113,24 @@
     font-weight: bold;
 }
 
-.best .best_product_wrapper {
+/* PRODUCT */
+.product_wrapper {
     margin-top: 30px;
-    width: 100%;
+    max-width: 1300px;
+    min-width: 690px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* PRODUCT */
 .product {
-    width: 24%;
+    min-width: 300px;
+    width: 300px;
     cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.product:not(:nth-child(4n)) {
+    margin-right: 33px;
 }
 
 .product .product_description_wrapper span {
