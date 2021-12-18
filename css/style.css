@@ -184,6 +184,14 @@
     margin-bottom: 12px;
 }
 
+.auth .alert_message {
+    display: flex;
+    padding-left: 156px;
+    color: red;
+    font-size: 12px;
+}
+
+
 .auth .row .field_label {
     width: 120px;
     min-width: 120px;
