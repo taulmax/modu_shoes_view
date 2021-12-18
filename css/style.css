@@ -334,3 +334,24 @@
     background: #212224;
     margin-left: 10px;
 }
+
+/* 글 작성 */
+.write {
+    width: 100%;
+    padding: 150px 300px;
+    min-height: 800px;
+}
+
+.write .title_wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    min-width: 690px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.write .title_wrapper .title {
+    font-size: 45px;
+    font-weight: bold;
+}
