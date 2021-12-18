@@ -336,13 +336,13 @@
 }
 
 /* 글 작성 */
-.write {
+.release_write {
     width: 100%;
     padding: 150px 300px;
     min-height: 800px;
 }
 
-.write .title_wrapper {
+.release_write .title_wrapper {
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
@@ -351,7 +351,65 @@
     border-bottom: 1px solid #e9e9e9;
 }
 
-.write .title_wrapper .title {
+.release_write .title_wrapper .title {
     font-size: 45px;
     font-weight: bold;
+}
+
+.release_write .release_write_wrapper form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15PX;
+}
+
+.release_write .release_write_wrapper form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border: 1px solid #e9e9e9;
+    padding-left: 10px;
+}
+
+.release_write .release_write_wrapper form textarea {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #e9e9e9;
+}
+
+.release_write .button_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.release_write .button_wrapper .detail_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: #212224;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination a {
+    font-size: 30px;
+    padding: 4px;
+}
+
+.pagination a:last-child {
+    padding-right: 0;
 }
